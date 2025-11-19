@@ -48,11 +48,7 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
-            resultBox = new TextBox();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // neuronInput0
@@ -62,7 +58,6 @@
             neuronInput0.Font = new Font("Segoe UI", 12F);
             neuronInput0.Location = new Point(111, 152);
             neuronInput0.Name = "neuronInput0";
-            neuronInput0.PlaceholderText = "ex. 0 or 1";
             neuronInput0.Size = new Size(115, 34);
             neuronInput0.TabIndex = 0;
             neuronInput0.TextAlign = HorizontalAlignment.Center;
@@ -74,7 +69,6 @@
             neuronInput1.Font = new Font("Segoe UI", 12F);
             neuronInput1.Location = new Point(111, 208);
             neuronInput1.Name = "neuronInput1";
-            neuronInput1.PlaceholderText = "ex. 0 or 1";
             neuronInput1.Size = new Size(115, 34);
             neuronInput1.TabIndex = 1;
             neuronInput1.TextAlign = HorizontalAlignment.Center;
@@ -86,7 +80,6 @@
             neuronInput2.Font = new Font("Segoe UI", 12F);
             neuronInput2.Location = new Point(111, 263);
             neuronInput2.Name = "neuronInput2";
-            neuronInput2.PlaceholderText = "ex. 0 or 1";
             neuronInput2.Size = new Size(115, 34);
             neuronInput2.TabIndex = 2;
             neuronInput2.TextAlign = HorizontalAlignment.Center;
@@ -98,7 +91,6 @@
             neuronInput3.Font = new Font("Segoe UI", 12F);
             neuronInput3.Location = new Point(111, 320);
             neuronInput3.Name = "neuronInput3";
-            neuronInput3.PlaceholderText = "ex. 0 or 1";
             neuronInput3.Size = new Size(115, 34);
             neuronInput3.TabIndex = 3;
             neuronInput3.TextAlign = HorizontalAlignment.Center;
@@ -107,7 +99,7 @@
             // 
             neuronOutput.BorderStyle = BorderStyle.FixedSingle;
             neuronOutput.Font = new Font("Segoe UI", 12F);
-            neuronOutput.Location = new Point(552, 233);
+            neuronOutput.Location = new Point(552, 237);
             neuronOutput.Name = "neuronOutput";
             neuronOutput.ReadOnly = true;
             neuronOutput.Size = new Size(115, 34);
@@ -116,7 +108,7 @@
             // 
             // createButton
             // 
-            createButton.Location = new Point(244, 411);
+            createButton.Location = new Point(120, 392);
             createButton.Name = "createButton";
             createButton.Size = new Size(115, 37);
             createButton.TabIndex = 7;
@@ -126,7 +118,7 @@
             // 
             // trainButton
             // 
-            trainButton.Location = new Point(403, 411);
+            trainButton.Location = new Point(333, 392);
             trainButton.Name = "trainButton";
             trainButton.Size = new Size(115, 37);
             trainButton.TabIndex = 8;
@@ -147,7 +139,7 @@
             // 
             // textButton
             // 
-            textButton.Location = new Point(569, 411);
+            textButton.Location = new Point(543, 392);
             textButton.Name = "textButton";
             textButton.Size = new Size(115, 37);
             textButton.TabIndex = 10;
@@ -271,73 +263,28 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.Black;
-            label11.Location = new Point(569, 285);
+            label11.Location = new Point(688, 244);
             label11.Name = "label11";
             label11.Size = new Size(79, 23);
             label11.TabIndex = 21;
             label11.Text = "Output 0";
             // 
-            // resultBox
+            // button1
             // 
-            resultBox.BorderStyle = BorderStyle.FixedSingle;
-            resultBox.Font = new Font("Segoe UI", 12F);
-            resultBox.Location = new Point(775, 233);
-            resultBox.Name = "resultBox";
-            resultBox.ReadOnly = true;
-            resultBox.Size = new Size(35, 34);
-            resultBox.TabIndex = 22;
-            resultBox.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(731, 165);
-            label12.Name = "label12";
-            label12.Size = new Size(126, 20);
-            label12.TabIndex = 23;
-            label12.Text = "output >= 0.5 = 1";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(731, 185);
-            label13.Name = "label13";
-            label13.Size = new Size(116, 20);
-            label13.TabIndex = 24;
-            label13.Text = "output < 0.5 = 0";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.Black;
-            label14.Location = new Point(759, 285);
-            label14.Name = "label14";
-            label14.Size = new Size(65, 23);
-            label14.TabIndex = 25;
-            label14.Text = "Output";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.Black;
-            label15.Location = new Point(731, 308);
-            label15.Name = "label15";
-            label15.Size = new Size(126, 23);
-            label15.TabIndex = 26;
-            label15.Text = "Representation";
+            button1.Location = new Point(647, 336);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 22;
+            button1.Text = "Automate";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(899, 493);
-            Controls.Add(label15);
-            Controls.Add(label14);
-            Controls.Add(label13);
-            Controls.Add(label12);
-            Controls.Add(resultBox);
+            ClientSize = new Size(783, 493);
+            Controls.Add(button1);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -386,10 +333,6 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private TextBox resultBox;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
+        private Button button1;
     }
 }
