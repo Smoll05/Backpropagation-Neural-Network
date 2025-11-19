@@ -8,12 +8,6 @@ namespace BPNN_model
         NeuralNet nn;
         bool hasTrained = false;
 
-        //[
-        //    [no. neurons, epochs, true result (1), false result (0)]
-        //]
-
-        List<double[]> results = new List<double[]>();
-
         public Form1()
         {
             InitializeComponent();
@@ -21,14 +15,14 @@ namespace BPNN_model
             textButton.Enabled = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void createButton_Click(object sender, EventArgs e)
         {
             nn = new NeuralNet(4, 200, 1);
             trainStatus.Text = "Neural Network Initializes";
             trainButton.Enabled = true;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void trainButton_Click(object sender, EventArgs e)
         {
             int epochs = 150;
 
@@ -169,7 +163,7 @@ namespace BPNN_model
             textButton.Enabled = true;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void testButton_Click(object sender, EventArgs e)
         {
             string input0 = neuronInput0.Text;
             string input1 = neuronInput1.Text;

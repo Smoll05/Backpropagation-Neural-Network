@@ -113,7 +113,7 @@
             createButton.TabIndex = 7;
             createButton.Text = "Create BPNN";
             createButton.UseVisualStyleBackColor = true;
-            createButton.Click += button1_Click;
+            createButton.Click += createButton_Click;
             // 
             // trainButton
             // 
@@ -123,7 +123,7 @@
             trainButton.TabIndex = 8;
             trainButton.Text = "Train BPNN";
             trainButton.UseVisualStyleBackColor = true;
-            trainButton.Click += button2_Click;
+            trainButton.Click += trainButton_Click;
             // 
             // label1
             // 
@@ -144,7 +144,7 @@
             textButton.TabIndex = 10;
             textButton.Text = "Test BPNN";
             textButton.UseVisualStyleBackColor = true;
-            textButton.Click += button3_Click;
+            textButton.Click += testButton_Click;
             // 
             // trainStatus
             // 
