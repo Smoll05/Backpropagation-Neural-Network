@@ -48,6 +48,7 @@
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // neuronInput0
@@ -268,11 +269,22 @@
             label11.TabIndex = 21;
             label11.Text = "Output 0";
             // 
+            // button1
+            // 
+            button1.Location = new Point(647, 336);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 22;
+            button1.Text = "Automate";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(783, 493);
+            Controls.Add(button1);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
@@ -321,5 +333,6 @@
         private Label label9;
         private Label label10;
         private Label label11;
+        private Button button1;
     }
 }
