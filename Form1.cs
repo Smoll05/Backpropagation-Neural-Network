@@ -17,7 +17,7 @@ namespace BPNN_model
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            nn = new NeuralNet(4, 200, 1);
+            nn = new NeuralNet(4, 180, 1);
             trainStatus.Text = "Neural Network Initializes";
             trainButton.Enabled = true;
         }
